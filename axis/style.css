@@ -1,0 +1,17 @@
+/*
+Theme Name: AXIS
+Theme URI: https://axis.example/theme
+Author: Louis Okechukwu
+Author URI: https://github.com/Devlouiz
+Description: A commercial real estate block theme built around property intelligence, not property cards. Editorial pages for advisory firms work out of the box; install the AXIS CRE plugin to add properties, markets, transactions, experts and research with a synced map and search.
+Requires at least: 6.6
+Tested up to: 7.1
+Requires PHP: 7.4
+Version: 0.2.2
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: axis
+Tags: full-site-editing, block-patterns, block-styles, style-variations, wide-blocks, editor-style, custom-colors, custom-menu, accessibility-ready, translation-ready, portfolio
+*/
+
+/* Styles live in theme.json and assets/css/axis.css. */

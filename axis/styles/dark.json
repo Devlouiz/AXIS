@@ -1,0 +1,130 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Dark",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "base",
+					"name": "Night",
+					"color": "#0E1420"
+				},
+				{
+					"slug": "panel",
+					"name": "Night panel",
+					"color": "#161E2C"
+				},
+				{
+					"slug": "inverse",
+					"name": "Night deep",
+					"color": "#070B12"
+				},
+				{
+					"slug": "contrast",
+					"name": "Cloud",
+					"color": "#F2F4F7"
+				},
+				{
+					"slug": "body",
+					"name": "Cloud body",
+					"color": "#C9D0DB"
+				},
+				{
+					"slug": "contrast-muted",
+					"name": "Cloud muted",
+					"color": "#A3ACBC"
+				},
+				{
+					"slug": "on-inverse",
+					"name": "On night",
+					"color": "#F2F4F7"
+				},
+				{
+					"slug": "accent",
+					"name": "Teal light",
+					"color": "#3CC9A3"
+				},
+				{
+					"slug": "accent-strong",
+					"name": "Teal pale",
+					"color": "#6FDBBE"
+				},
+				{
+					"slug": "accent-soft",
+					"name": "Teal deep",
+					"color": "#12342C"
+				},
+				{
+					"slug": "on-accent",
+					"name": "On teal light",
+					"color": "#0E1420"
+				},
+				{
+					"slug": "line",
+					"name": "Line",
+					"color": "#283244"
+				},
+				{
+					"slug": "line-strong",
+					"name": "Line strong",
+					"color": "#5A6478"
+				},
+				{
+					"slug": "focus",
+					"name": "Focus",
+					"color": "#3CC9A3"
+				},
+				{
+					"slug": "marker",
+					"name": "Amber",
+					"color": "#F5A524"
+				},
+				{
+					"slug": "on-marker",
+					"name": "On amber",
+					"color": "#101828"
+				},
+				{
+					"slug": "lease",
+					"name": "Lease blue",
+					"color": "#6E9EF5"
+				},
+				{
+					"slug": "danger",
+					"name": "Danger",
+					"color": "#F97066"
+				},
+				{
+					"slug": "grid",
+					"name": "Grid",
+					"color": "rgba(242, 244, 247, 0.08)"
+				}
+			]
+		},
+		"shadow": {
+			"presets": [
+				{
+					"slug": "rest",
+					"name": "Rest",
+					"shadow": "0 1px 2px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.06)"
+				},
+				{
+					"slug": "hover",
+					"name": "Hover",
+					"shadow": "0 18px 40px -12px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.1)"
+				},
+				{
+					"slug": "float",
+					"name": "Floating",
+					"shadow": "0 24px 60px -20px rgba(0, 0, 0, 0.8)"
+				}
+			]
+		},
+		"custom": {
+			"overlay": {
+				"scrim": "rgba(0, 0, 0, 0.72)"
+			}
+		}
+	}
+}

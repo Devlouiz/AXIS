@@ -1,0 +1,1120 @@
+/*
+ * AXIS front-end and editor styles, version 2.
+ * Photo-first listings, soft elevation and a single teal accent.
+ * Every colour, size, radius and shadow comes from theme.json presets.
+ */
+
+:root {
+	--axis-icon-arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14'/%3E%3Cpath d='m13 6 6 6-6 6'/%3E%3C/svg%3E");
+	--axis-icon-diag: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 17 17 7'/%3E%3Cpath d='M8 7h9v9'/%3E%3C/svg%3E");
+	--axis-icon-quote: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M10 7H6a3 3 0 0 0-3 3v4h4v4l3-4v-7Zm11 0h-4a3 3 0 0 0-3 3v4h4v4l3-4v-7Z'/%3E%3C/svg%3E");
+	--axis-icon-mark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M4 20 12 4l8 16'/%3E%3Cpath d='M7.5 13h9'/%3E%3C/svg%3E");
+	--axis-stretch-display: 112%;
+	--axis-stretch-heading: 108%;
+	--axis-ease: var(--wp--custom--motion--ease, cubic-bezier(0.2, 0.7, 0.2, 1));
+	--axis-fast: var(--wp--custom--motion--fast, 200ms);
+	--axis-base: var(--wp--custom--motion--base, 350ms);
+	--axis-slow: var(--wp--custom--motion--slow, 800ms);
+	--axis-card-radius: var(--wp--custom--radius--card, 14px);
+	--axis-shadow-rest: var(--wp--preset--shadow--rest);
+	--axis-shadow-hover: var(--wp--preset--shadow--hover);
+	--axis-shadow-float: var(--wp--preset--shadow--float);
+	--axis-car-gap: 24px;
+	--axis-car-per: 4;
+}
+
+/* ---------- Type ---------- */
+
+h1, h2, h3, h4,
+.wp-block-post-title,
+.has-heading-1-font-size,
+.has-heading-2-font-size,
+.has-heading-3-font-size {
+	font-stretch: var(--axis-stretch-heading);
+	text-wrap: balance;
+}
+
+.has-display-xl-font-size,
+.has-display-lg-font-size,
+.has-display-md-font-size,
+.has-display-sm-font-size {
+	font-stretch: var(--axis-stretch-display);
+	font-weight: 800;
+	line-height: 1.04;
+	letter-spacing: -0.01em;
+	text-wrap: balance;
+}
+
+.has-data-sm-font-size,
+.has-data-md-font-size,
+.has-data-lg-font-size,
+.is-style-figure,
+.is-style-count-up,
+.is-style-technical-label {
+	font-variant-numeric: tabular-nums lining-nums;
+}
+
+.has-data-md-font-size,
+.has-data-lg-font-size,
+.is-style-figure,
+.is-style-count-up {
+	font-weight: 800;
+	font-stretch: 108%;
+	line-height: 1;
+}
+
+p {
+	text-wrap: pretty;
+}
+
+/* ---------- Focus: a ring with a gap, never removed ---------- */
+
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible,
+.wp-element-button:focus-visible {
+	outline: var(--wp--custom--focus--width, 3px) solid var(--wp--preset--color--focus);
+	outline-offset: var(--wp--custom--focus--offset, 2px);
+}
+
+/* ---------- Links and buttons ---------- */
+
+a {
+	text-underline-offset: 0.18em;
+	text-decoration-thickness: 1px;
+}
+
+a:hover {
+	text-decoration-thickness: 2px;
+}
+
+.wp-element-button,
+.wp-block-button__link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	min-height: 48px;
+	transition: background-color var(--axis-fast), color var(--axis-fast), box-shadow var(--axis-fast), transform var(--axis-fast);
+}
+
+.wp-block-button__link:hover {
+	transform: translateY(-1px);
+}
+
+.wp-block-button.is-style-secondary .wp-block-button__link {
+	background: var(--wp--preset--color--base);
+	color: var(--wp--preset--color--contrast);
+	box-shadow: inset 0 0 0 1px var(--wp--preset--color--line);
+}
+
+.wp-block-button.is-style-secondary .wp-block-button__link:hover {
+	background: var(--wp--preset--color--panel);
+	color: var(--wp--preset--color--contrast);
+}
+
+.wp-block-button.is-style-text .wp-block-button__link {
+	background: transparent;
+	color: var(--wp--preset--color--accent);
+	padding-left: 0;
+	padding-right: 0;
+	min-height: 44px;
+	text-decoration: none;
+}
+
+.wp-block-button.is-style-text .wp-block-button__link::after {
+	content: "";
+	width: 1em;
+	height: 1em;
+	background: currentcolor;
+	-webkit-mask: var(--axis-icon-arrow) center / contain no-repeat;
+	mask: var(--axis-icon-arrow) center / contain no-repeat;
+	transition: transform var(--axis-fast);
+}
+
+.wp-block-button.is-style-text .wp-block-button__link:hover {
+	color: var(--wp--preset--color--accent-strong);
+	transform: none;
+}
+
+.wp-block-button.is-style-text .wp-block-button__link:hover::after {
+	transform: translateX(3px);
+}
+
+/* On a photo or a teal band. */
+.wp-block-button.is-style-on-photo .wp-block-button__link {
+	background: rgba(9, 16, 28, 0.24);
+	color: #fff;
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.45);
+	-webkit-backdrop-filter: blur(6px);
+	backdrop-filter: blur(6px);
+}
+
+.wp-block-button.is-style-on-photo .wp-block-button__link:hover {
+	background: rgba(9, 16, 28, 0.38);
+}
+
+/* Small rounded links, for popular searches. */
+.wp-block-button.is-style-chip .wp-block-button__link {
+	min-height: 36px;
+	padding: 0.25rem 0.875rem;
+	border-radius: var(--wp--custom--radius--round, 999px);
+	background: rgba(255, 255, 255, 0.14);
+	color: #fff;
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.32);
+	font-size: var(--wp--preset--font-size--label-md);
+	font-weight: 500;
+}
+
+.wp-block-button.is-style-chip .wp-block-button__link:hover {
+	background: rgba(255, 255, 255, 0.26);
+}
+
+
+/* ---------- Eyebrow, labels, figures ---------- */
+
+.is-style-eyebrow {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: var(--wp--preset--color--accent);
+	font-size: var(--wp--preset--font-size--label-md);
+	font-weight: 600;
+}
+
+.is-style-eyebrow::before {
+	content: "";
+	flex: none;
+	width: 22px;
+	height: 2px;
+	border-radius: 2px;
+	background: currentcolor;
+}
+
+.is-style-technical-label {
+	font-size: var(--wp--preset--font-size--label-sm);
+	font-weight: 500;
+	color: var(--wp--preset--color--contrast-muted);
+}
+
+.is-style-figure,
+.is-style-count-up {
+	font-size: var(--wp--preset--font-size--data-lg);
+}
+
+/* ---------- Sections ---------- */
+
+.axis-section-head {
+	align-items: flex-end;
+}
+
+.axis-section-head .wp-block-heading {
+	margin-top: 0.625rem;
+}
+
+/* ---------- Cards ---------- */
+
+.is-style-axis-card {
+	position: relative;
+	background: var(--wp--preset--color--base);
+	border-radius: var(--axis-card-radius);
+	box-shadow: var(--axis-shadow-rest);
+	overflow: hidden;
+	transition: transform var(--axis-base) var(--axis-ease), box-shadow var(--axis-base);
+}
+
+.is-style-axis-card:hover,
+.is-style-axis-card:focus-within {
+	transform: translateY(-6px);
+	box-shadow: var(--axis-shadow-hover);
+}
+
+.is-style-axis-card .wp-block-image,
+.is-style-axis-card .wp-block-post-featured-image {
+	margin: 0;
+	overflow: hidden;
+	border-radius: 0;
+}
+
+.is-style-axis-card .wp-block-image img,
+.is-style-axis-card .wp-block-post-featured-image img {
+	border-radius: 0;
+	transition: transform var(--axis-slow) var(--axis-ease);
+}
+
+.is-style-axis-card:hover .wp-block-image img,
+.is-style-axis-card:hover .wp-block-post-featured-image img {
+	transform: scale(1.06);
+}
+
+/* One link covers the whole card; other links and buttons stay above it. */
+.is-style-axis-card :where(h2, h3, h4, .wp-block-post-title) a {
+	color: var(--wp--preset--color--contrast);
+	text-decoration: none;
+}
+
+.is-style-axis-card :where(h2, h3, h4, .wp-block-post-title) a::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+}
+
+.is-style-axis-card :where(h2, h3, h4, .wp-block-post-title) a:hover {
+	color: var(--wp--preset--color--accent);
+}
+
+.is-style-axis-card :where(h2, h3, h4, .wp-block-post-title) a:focus-visible {
+	outline: 0;
+}
+
+.is-style-axis-card:has(:where(h2, h3, h4, .wp-block-post-title) a:focus-visible) {
+	outline: var(--wp--custom--focus--width, 3px) solid var(--wp--preset--color--focus);
+	outline-offset: 2px;
+}
+
+.is-style-axis-card :where(.wp-block-buttons, .wp-block-post-terms a, .axis-card-link) {
+	position: relative;
+	z-index: 2;
+}
+
+/* Small chips such as "4 assets". */
+.is-style-axis-pill,
+.axis-pill {
+	display: inline-flex;
+	align-items: center;
+	align-self: flex-start;
+	width: fit-content;
+	padding: 0.125rem 0.625rem;
+	border-radius: var(--wp--custom--radius--round, 999px);
+	background: var(--wp--preset--color--accent-soft);
+	color: var(--wp--preset--color--accent-strong);
+	font-size: var(--wp--preset--font-size--label-sm);
+	font-weight: 700;
+}
+
+/* Numbered cards for services. */
+.axis-numbered {
+	counter-reset: axis-step;
+}
+
+.axis-numbered > .is-style-axis-card {
+	counter-increment: axis-step;
+	padding-left: 5.25rem !important;
+}
+
+.axis-numbered > .is-style-axis-card::before {
+	content: counter(axis-step, decimal-leading-zero);
+	position: absolute;
+	left: 1.25rem;
+	top: 1.25rem;
+	display: grid;
+	place-items: center;
+	width: 48px;
+	height: 48px;
+	border-radius: 12px;
+	background: var(--wp--preset--color--accent-soft);
+	color: var(--wp--preset--color--accent-strong);
+	font-weight: 800;
+	font-stretch: 112%;
+}
+
+.axis-numbered > .is-style-axis-card:hover {
+	transform: translateX(6px);
+}
+
+/* ---------- Hero ---------- */
+
+.wp-block-cover.is-style-axis-hero {
+	border-radius: 0;
+	padding-top: clamp(4.5rem, 9vw, 7.5rem);
+	padding-bottom: clamp(3rem, 5vw, 4.5rem);
+	align-items: flex-end;
+	overflow: hidden;
+}
+
+.wp-block-cover.is-style-axis-hero .wp-block-cover__image-background {
+	transform: scale(1.02);
+}
+
+.wp-block-cover.is-style-axis-hero .wp-block-cover__inner-container {
+	width: 100%;
+	color: #fff;
+}
+
+.wp-block-cover.is-style-axis-hero .is-style-eyebrow {
+	color: #7fe0c4;
+}
+
+.wp-block-cover.is-style-axis-hero :where(p:not(.is-style-eyebrow):not(.is-style-count-up)) {
+	color: rgba(255, 255, 255, 0.88);
+}
+
+.axis-hero-stats {
+	padding-top: 1.75rem;
+	border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.axis-hero-stats .is-style-count-up {
+	color: #fff;
+}
+
+.axis-hero-stats p:not(.is-style-count-up) {
+	color: rgba(255, 255, 255, 0.82) !important;
+	font-size: var(--wp--preset--font-size--body-sm);
+}
+
+/* Search panel on the hero: white, floating, with tabs where the plugin provides them. */
+.axis-search-panel {
+	max-width: 1080px;
+	padding: 0.625rem;
+	background: var(--wp--preset--color--base);
+	border-radius: var(--axis-card-radius);
+	box-shadow: var(--axis-shadow-float);
+	color: var(--wp--preset--color--body);
+}
+
+.axis-search-panel .wp-block-search__inside-wrapper {
+	gap: 0.5rem;
+}
+
+.axis-search-panel .wp-block-search__input {
+	min-height: 56px;
+	border: 0;
+	background: var(--wp--preset--color--panel);
+}
+
+.axis-search-panel .wp-block-search__button {
+	min-height: 56px;
+	padding-inline: 1.75rem;
+	margin: 0;
+}
+
+.axis-chips {
+	align-items: center;
+}
+
+.axis-chips > p {
+	color: rgba(255, 255, 255, 0.8) !important;
+	margin: 0;
+}
+
+/* ---------- Photo tiles (cover blocks used as links) ---------- */
+
+.wp-block-cover.is-style-axis-tile {
+	aspect-ratio: 3 / 4;
+	min-height: 0 !important;
+	padding: 1.25rem;
+	align-items: flex-end;
+	overflow: hidden;
+	box-shadow: var(--axis-shadow-rest);
+	transition: transform var(--axis-base) var(--axis-ease), box-shadow var(--axis-base);
+}
+
+.wp-block-cover.is-style-axis-tile .wp-block-cover__image-background {
+	transition: transform var(--axis-slow) var(--axis-ease);
+}
+
+.wp-block-cover.is-style-axis-tile:hover,
+.wp-block-cover.is-style-axis-tile:focus-within {
+	transform: translateY(-6px);
+	box-shadow: var(--axis-shadow-hover);
+}
+
+.wp-block-cover.is-style-axis-tile:hover .wp-block-cover__image-background {
+	transform: scale(1.07);
+}
+
+.wp-block-cover.is-style-axis-tile .wp-block-cover__inner-container {
+	width: 100%;
+}
+
+.wp-block-cover.is-style-axis-tile :where(h2, h3) {
+	color: #fff;
+	margin: 0;
+}
+
+.wp-block-cover.is-style-axis-tile :where(h2, h3) a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.wp-block-cover.is-style-axis-tile :where(h2, h3) a::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+}
+
+.wp-block-cover.is-style-axis-tile :where(h2, h3) a:focus-visible {
+	outline: 0;
+}
+
+.wp-block-cover.is-style-axis-tile:has(a:focus-visible) {
+	outline: var(--wp--custom--focus--width, 3px) solid var(--wp--preset--color--focus);
+	outline-offset: 2px;
+}
+
+.wp-block-cover.is-style-axis-tile p {
+	color: rgba(255, 255, 255, 0.88);
+	margin: 0.125rem 0 0;
+}
+
+.wp-block-cover.is-style-axis-tile::after {
+	content: "";
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	z-index: 2;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #fff var(--axis-icon-diag) center / 18px no-repeat;
+	opacity: 0;
+	transform: scale(0.6) rotate(-45deg);
+	transition: opacity var(--axis-base), transform var(--axis-base) var(--axis-ease);
+	pointer-events: none;
+}
+
+.wp-block-cover.is-style-axis-tile:hover::after,
+.wp-block-cover.is-style-axis-tile:focus-within::after {
+	opacity: 1;
+	transform: none;
+}
+
+/* ---------- Carousel: a scroll-snap row with previous and next buttons ---------- */
+
+/* Without JavaScript the items stay in their normal grid. axis.js adds .axis-car-track. */
+.axis-car-track {
+	display: flex !important;
+	flex-wrap: nowrap !important;
+	grid-template-columns: none !important;
+	gap: var(--axis-car-gap) !important;
+	overflow-x: auto;
+	overscroll-behavior-x: contain;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	scrollbar-width: none;
+
+	/* Room for the hover lift and shadow, which the scroll box would otherwise clip. */
+	padding: 0.75rem 1rem 3rem !important;
+	margin: -0.75rem -1rem -1.5rem !important;
+	scroll-padding-inline: 1rem;
+	list-style: none;
+}
+
+.axis-car-track::-webkit-scrollbar {
+	display: none;
+}
+
+.axis-car-track > * {
+	flex: 0 0 calc((100% - (var(--axis-car-per) - 1) * var(--axis-car-gap)) / var(--axis-car-per)) !important;
+	max-width: none !important;
+	margin: 0 !important;
+	scroll-snap-align: start;
+	min-width: 0;
+}
+
+.axis-per-3 {
+	--axis-car-per: 3;
+}
+
+.axis-per-2 {
+	--axis-car-per: 2;
+}
+
+.axis-car-nav {
+	display: flex;
+	justify-content: flex-end;
+	gap: 0.625rem;
+	margin-top: 0.25rem;
+}
+
+.axis-car-nav button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	border: 1px solid var(--wp--preset--color--line);
+	background: var(--wp--preset--color--base);
+	color: var(--wp--preset--color--contrast);
+	cursor: pointer;
+	transition: background-color var(--axis-fast), color var(--axis-fast), border-color var(--axis-fast);
+}
+
+.axis-car-nav button:hover:not(:disabled) {
+	background: var(--wp--preset--color--contrast);
+	border-color: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+}
+
+.axis-car-nav button:disabled {
+	opacity: 0.4;
+	cursor: default;
+}
+
+.axis-car-nav svg {
+	width: 20px;
+	height: 20px;
+}
+
+@media (max-width: 1100px) {
+
+	:root {
+		--axis-car-per: 3;
+	}
+
+	.axis-per-3 {
+		--axis-car-per: 2;
+	}
+}
+
+@media (max-width: 781px) {
+
+	:root,
+	.axis-per-3,
+	.axis-per-2 {
+		--axis-car-per: 1.18;
+	}
+}
+
+/* ---------- Testimonials ---------- */
+
+.wp-block-quote.is-style-axis-testimonial {
+	display: flex;
+	flex-direction: column;
+	gap: 1.375rem;
+	height: 100%;
+	margin: 0;
+	padding: clamp(1.5rem, 3vw, 2.25rem);
+	border: 0;
+	border-radius: var(--wp--custom--radius--large, 20px);
+	background: var(--wp--preset--color--base);
+	box-shadow: var(--axis-shadow-rest);
+	color: var(--wp--preset--color--contrast);
+}
+
+.wp-block-quote.is-style-axis-testimonial::before {
+	content: "";
+	width: 44px;
+	height: 44px;
+	background: var(--wp--preset--color--accent);
+	-webkit-mask: var(--axis-icon-quote) center / contain no-repeat;
+	mask: var(--axis-icon-quote) center / contain no-repeat;
+}
+
+.wp-block-quote.is-style-axis-testimonial p {
+	margin: 0;
+	font-size: var(--wp--preset--font-size--body-lg);
+	line-height: 1.55;
+}
+
+.wp-block-quote.is-style-axis-testimonial cite {
+	margin-top: auto;
+	color: var(--wp--preset--color--contrast-muted);
+	font-size: var(--wp--preset--font-size--label-md);
+	font-style: normal;
+}
+
+/* ---------- Call to action band ---------- */
+
+.is-style-axis-cta {
+	overflow: hidden;
+	border-radius: var(--wp--custom--radius--large, 20px);
+	background: var(--wp--preset--color--accent);
+	color: var(--wp--preset--color--on-accent);
+}
+
+.is-style-axis-cta :where(h2, h3, p) {
+	color: var(--wp--preset--color--on-accent);
+}
+
+/* On the teal band the outline button takes the band's text colour, light or dark. */
+.is-style-axis-cta .wp-block-button.is-style-on-photo .wp-block-button__link {
+	background: transparent;
+	color: var(--wp--preset--color--on-accent);
+	box-shadow: inset 0 0 0 1px var(--wp--preset--color--on-accent);
+	-webkit-backdrop-filter: none;
+	backdrop-filter: none;
+}
+
+.is-style-axis-cta .wp-block-button.is-style-on-photo .wp-block-button__link:hover {
+	background: color-mix(in srgb, var(--wp--preset--color--on-accent) 12%, transparent);
+}
+
+.is-style-axis-cta .wp-block-image,
+.is-style-axis-cta .wp-block-image img {
+	height: 100%;
+	margin: 0;
+	border-radius: 0;
+	object-fit: cover;
+}
+
+.is-style-axis-cta .wp-block-columns {
+	margin: 0;
+}
+
+/* ---------- Media cards, rounded images, call to action ---------- */
+
+.axis-media-card {
+	align-items: center;
+}
+
+.axis-thumb {
+	flex: 0 0 112px;
+	margin: 0 !important;
+}
+
+.axis-thumb img {
+	border-radius: var(--wp--custom--radius--control) !important;
+}
+
+.axis-media-card > .wp-block-group {
+	flex: 1;
+	min-width: 0;
+}
+
+.axis-rounded-lg img {
+	border-radius: var(--wp--custom--radius--large, 20px) !important;
+}
+
+.axis-cta-cols {
+	align-items: stretch !important;
+}
+
+.axis-cta-cols > .wp-block-column:last-child {
+	min-height: 320px;
+}
+
+.axis-cta-img,
+.axis-cta-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.axis-record {
+	padding-top: 0.875rem;
+	border-top: 1px solid var(--wp--preset--color--line);
+}
+
+.axis-portrait img {
+	background: linear-gradient(160deg, #dfeee9, #c7ddd5);
+}
+
+.wp-block-cover.is-style-axis-hero :where(h1, h2, h3) {
+	color: #fff;
+}
+
+/* ---------- Header ---------- */
+
+header.wp-block-template-part {
+	position: sticky;
+	top: var(--wp-admin--admin-bar--height, 0px);
+	z-index: 50;
+}
+
+.axis-header {
+	background: color-mix(in srgb, var(--wp--preset--color--base) 94%, transparent);
+	-webkit-backdrop-filter: saturate(1.4) blur(10px);
+	backdrop-filter: saturate(1.4) blur(10px);
+	border-bottom: 1px solid var(--wp--preset--color--line);
+	transition: box-shadow var(--axis-base);
+}
+
+.is-scrolled .axis-header {
+	box-shadow: 0 8px 24px -16px rgba(16, 24, 40, 0.35);
+}
+
+.axis-header .wp-block-site-title a,
+.axis-footer .wp-block-site-title a {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.625rem;
+	font-stretch: 125%;
+}
+
+.axis-header .wp-block-site-title a::before,
+.axis-footer .wp-block-site-title a::before {
+	content: "";
+	flex: none;
+	width: 36px;
+	height: 36px;
+	border-radius: 10px;
+	background-color: var(--wp--preset--color--accent);
+	background-position: center;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M4 20 12 4l8 16'/%3E%3Cpath d='M7.5 13h9'/%3E%3C/svg%3E");
+}
+
+.axis-header .wp-block-site-logo + .wp-block-site-title a::before {
+	display: none;
+}
+
+.axis-header .wp-block-navigation-item__content {
+	padding-block: 0.375rem;
+	border-bottom: 2px solid transparent;
+	transition: color var(--axis-fast), border-color var(--axis-fast);
+}
+
+.axis-header .wp-block-navigation-item__content:hover,
+.axis-header .wp-block-navigation-item.current-menu-item > .wp-block-navigation-item__content,
+.axis-header .wp-block-navigation-item__content[aria-current="page"] {
+	color: var(--wp--preset--color--accent);
+	border-bottom-color: var(--wp--preset--color--accent);
+}
+
+@media (min-width: 1024px) {
+
+	.axis-header .wp-block-navigation .has-child .wp-block-navigation__submenu-container {
+		min-width: 16rem;
+		padding: 0.75rem;
+		background: var(--wp--preset--color--base);
+		border: 0;
+		border-radius: var(--axis-card-radius);
+		box-shadow: var(--axis-shadow-float);
+	}
+}
+
+.wp-block-navigation__responsive-container.is-menu-open {
+	background-color: var(--wp--preset--color--base);
+	color: var(--wp--preset--color--contrast);
+	padding: 1.25rem;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
+	gap: 1rem;
+	font-size: var(--wp--preset--font-size--body-lg);
+}
+
+.wp-block-navigation__responsive-container-open,
+.wp-block-navigation__responsive-container-close {
+	min-width: 44px;
+	min-height: 44px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wp-block-navigation__responsive-container-open {
+	border: 1px solid var(--wp--preset--color--line);
+	border-radius: 50%;
+}
+
+.axis-header .wp-block-navigation {
+	align-self: center;
+}
+
+/* Keep the bar on one line: the name, the button and the menu items never wrap. */
+.axis-header .wp-block-site-title,
+.axis-header .wp-block-button__link,
+.axis-header .wp-block-navigation-item__content {
+	white-space: nowrap;
+}
+
+.axis-header .wp-block-navigation__container,
+.axis-header .wp-block-page-list {
+	flex-wrap: nowrap;
+}
+
+.axis-header .wp-block-search__inside-wrapper {
+	gap: 0.375rem;
+	padding: 0;
+	border: 0;
+}
+
+.axis-header .wp-block-search__input {
+	min-height: 44px;
+	border: 1px solid var(--wp--preset--color--line);
+	border-radius: var(--wp--custom--radius--control, 10px);
+	background: var(--wp--preset--color--panel);
+}
+
+.axis-header .wp-block-search__button {
+	min-width: 44px;
+	min-height: 44px;
+	margin: 0;
+	padding: 0 0.75rem;
+}
+
+/* The header search gives way to the menu on narrower desktops. */
+@media (max-width: 1599px) {
+
+	.axis-header .wp-block-search {
+		display: none;
+	}
+}
+
+/* ---------- Footer ---------- */
+
+.axis-footer {
+	color: rgba(255, 255, 255, 0.72);
+}
+
+.axis-footer :where(h2, h3, h4, .axis-footer-head) {
+	color: #fff;
+}
+
+.axis-footer a:not(.wp-element-button) {
+	color: rgba(255, 255, 255, 0.72);
+	text-decoration: none;
+}
+
+.axis-footer a:not(.wp-element-button):hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.axis-footer .wp-block-site-title a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.axis-footer .wp-block-list {
+	list-style: none;
+	padding-left: 0;
+	display: grid;
+	gap: 0.625rem;
+}
+
+.axis-footer-base {
+	border-top: 1px solid rgba(255, 255, 255, 0.12);
+	padding-top: 1.5rem;
+}
+
+/* ---------- Forms ---------- */
+
+.wp-block-search__input,
+:where(.axis-form) :where(input, select, textarea),
+.wp-block-post-comments-form :where(input[type="text"], input[type="email"], input[type="url"], textarea) {
+	min-height: 48px;
+	padding: 0.5rem 0.875rem;
+	background: var(--wp--preset--color--base);
+	color: var(--wp--preset--color--contrast);
+	border: 1px solid var(--wp--preset--color--line-strong);
+	border-radius: var(--wp--custom--radius--control);
+	font: inherit;
+}
+
+.wp-block-search__label {
+	font-size: var(--wp--preset--font-size--label-md);
+	font-weight: 600;
+	color: var(--wp--preset--color--contrast);
+}
+
+/* ---------- Posts ---------- */
+
+.wp-block-post-template.is-layout-grid > li > .wp-block-group {
+	height: 100%;
+}
+
+.wp-block-query-pagination {
+	border-top: 1px solid var(--wp--preset--color--line);
+	padding-top: 1.5rem;
+}
+
+/* ---------- Legacy block styles (kept for content made with version 1) ---------- */
+
+.is-style-axis-grid {
+	background-image:
+		linear-gradient(var(--wp--preset--color--grid) 1px, transparent 1px),
+		linear-gradient(90deg, var(--wp--preset--color--grid) 1px, transparent 1px);
+	background-size: 80px 80px;
+	background-position: -1px -1px;
+}
+
+.is-style-axis-rule {
+	border-top: 1px solid var(--wp--preset--color--line);
+	padding-top: 1rem;
+}
+
+.wp-block-list.is-style-axis-rows {
+	list-style: none;
+	padding-left: 0;
+}
+
+.wp-block-list.is-style-axis-rows > li {
+	border-top: 1px solid var(--wp--preset--color--line);
+	padding: 0.75rem 0;
+	margin: 0;
+}
+
+.wp-block-table.is-style-axis-data table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.wp-block-table.is-style-axis-data :where(th, td) {
+	border: 0;
+	border-bottom: 1px solid var(--wp--preset--color--line);
+	padding: 1rem 0.75rem 1rem 0;
+	text-align: left;
+}
+
+.wp-block-table.is-style-axis-data thead :where(th, td) {
+	color: var(--wp--preset--color--contrast-muted);
+	font-size: var(--wp--preset--font-size--label-sm);
+	font-weight: 500;
+}
+
+.wp-block-separator.is-style-axis-ticks {
+	border: 0;
+	height: 1px;
+	background: var(--wp--preset--color--line);
+}
+
+.axis-metric {
+	border-top: 1px solid var(--wp--preset--color--line);
+	padding-top: 1rem;
+}
+
+.axis-metric > * {
+	margin-block: 0;
+}
+
+.axis-metric > * + * {
+	margin-top: 0.25rem;
+}
+
+/* Asset class marker: kept for templates bound to the plugin's fields. */
+.axis-class {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.375rem;
+	color: var(--wp--preset--color--accent);
+	font-weight: 600;
+}
+
+.axis-status {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.1875rem 0.625rem;
+	border-radius: var(--wp--custom--radius--round, 999px);
+	background: var(--wp--preset--color--accent);
+	color: var(--wp--preset--color--on-accent);
+	font-size: var(--wp--preset--font-size--label-sm);
+	font-weight: 700;
+}
+
+.axis-annotated {
+	position: relative;
+}
+
+.axis-annotated .axis-annotation {
+	position: absolute;
+	left: 1rem;
+	bottom: 1rem;
+	margin: 0;
+	padding: 0.25rem 0.75rem;
+	border-radius: var(--wp--custom--radius--round, 999px);
+	background: rgba(9, 16, 28, 0.6);
+	color: #fff;
+	font-size: var(--wp--preset--font-size--label-sm);
+	font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Motion: reveal on scroll and count up (added by axis.js) ---------- */
+
+.axis-motion .axis-reveal {
+	opacity: 0;
+	transform: translateY(32px);
+	transition: opacity 0.7s var(--axis-ease), transform 0.7s var(--axis-ease);
+	transition-delay: var(--axis-delay, 0s);
+}
+
+.axis-motion .axis-reveal.is-in {
+	opacity: 1;
+	transform: none;
+}
+
+@keyframes axis-hero-settle {
+
+	from {
+		transform: scale(1.12);
+	}
+
+	to {
+		transform: scale(1.02);
+	}
+}
+
+.axis-motion .wp-block-cover.is-style-axis-hero .wp-block-cover__image-background {
+	animation: axis-hero-settle 18s var(--axis-ease) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		scroll-behavior: auto !important;
+		transition-duration: 0.01ms !important;
+	}
+
+	.is-style-axis-card:hover,
+	.wp-block-cover.is-style-axis-tile:hover {
+		transform: none;
+	}
+}
+
+/* ---------- Skip link ---------- */
+
+.skip-link.screen-reader-text:focus {
+	background: var(--wp--preset--color--base);
+	color: var(--wp--preset--color--contrast);
+}
+
+/* ---------- Small screens ---------- */
+
+@media (max-width: 781px) {
+
+	.axis-header .wp-block-buttons {
+		display: none;
+	}
+
+	.axis-search-panel .wp-block-search__inside-wrapper {
+		flex-direction: column;
+	}
+
+	.axis-search-panel .wp-block-search__button {
+		width: 100%;
+	}
+
+	.axis-hero-stats {
+		display: grid !important;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem !important;
+	}
+
+	.axis-numbered > .is-style-axis-card {
+		padding-left: 1.25rem !important;
+		padding-top: 5rem !important;
+	}
+
+	.axis-cta-cols > .wp-block-column:last-child {
+		min-height: 220px;
+	}
+
+	.wp-block-cover.is-style-axis-tile {
+		padding: 0.875rem;
+	}
+
+	.wp-block-cover.is-style-axis-tile :where(h2, h3) {
+		font-size: var(--wp--preset--font-size--heading-4) !important;
+	}
+
+	.is-style-axis-cta .wp-block-group {
+		padding: 2.25rem 1.5rem !important;
+	}
+}
+
+@media (forced-colors: active) {
+
+	.is-style-axis-card,
+	.wp-block-quote.is-style-axis-testimonial {
+		border: 1px solid CanvasText;
+	}
+}

@@ -1,0 +1,226 @@
+<?php
+/**
+ * Plugin-dependent patterns. Generated; edit the generator, not this file.
+ *
+ * @package Axis
+ */
+
+defined( 'ABSPATH' ) || exit;
+
+/**
+ * Patterns registered only when AXIS CRE is active.
+ *
+ * @return array<string, array<string, mixed>>
+ */
+function axis_cre_pattern_registry() {
+	return array(
+		'axis/market-explorer'         => array(
+			'file'        => 'market-explorer.php',
+			'title'       => _x( 'Market explorer', 'Pattern title', 'axis' ),
+			'description' => _x( 'Filters, synced map and results. Falls back to a list when the map is unavailable.', 'Pattern description', 'axis' ),
+			'categories'  => array( 'axis-home', 'axis-property' ),
+			'keywords'    => array( 'map', 'search', 'properties', 'filters' ),
+			'inserter'    => true,
+		),
+		'axis/featured-assets'         => array(
+			'file'        => 'featured-assets.php',
+			'title'       => _x( 'Featured assets', 'Pattern title', 'axis' ),
+			'description' => _x( 'Featured listings in a carousel, featured ones first.', 'Pattern description', 'axis' ),
+			'categories'  => array( 'axis-home', 'axis-property' ),
+			'keywords'    => array( 'properties', 'listings', 'assets', 'carousel' ),
+			'inserter'    => true,
+		),
+		'axis/property-types'          => array(
+			'file'        => 'property-types.php',
+			'title'       => _x( 'Browse by property type', 'Pattern title', 'axis' ),
+			'description' => _x( 'Five photo tiles, one per property type, linking to its listings.', 'Pattern description', 'axis' ),
+			'categories'  => array( 'axis-home', 'axis-property' ),
+			'keywords'    => array( 'types', 'categories', 'office', 'industrial' ),
+			'inserter'    => true,
+		),
+		'axis/markets-grid'            => array(
+			'file'        => 'markets-grid.php',
+			'title'       => _x( 'Markets', 'Pattern title', 'axis' ),
+			'description' => _x( 'Six market cards with a headline figure each. Edit the figures to match your latest research.', 'Pattern description', 'axis' ),
+			'categories'  => array( 'axis-home', 'axis-market' ),
+			'keywords'    => array( 'markets', 'cities', 'coverage' ),
+			'inserter'    => true,
+		),
+		'axis/market-intelligence'     => array(
+			'file'        => 'market-intelligence.php',
+			'title'       => _x( 'Market intelligence', 'Pattern title', 'axis' ),
+			'description' => _x( 'One market\'s figures with two charts. Charts open as tables.', 'Pattern description', 'axis' ),
+			'categories'  => array( 'axis-home', 'axis-market' ),
+			'keywords'    => array( 'data', 'research', 'vacancy', 'rent' ),
+			'inserter'    => true,
+		),
+		'axis/recent-transactions'     => array(
+			'file'        => 'recent-transactions.php',
+			'title'       => _x( 'Recent transactions', 'Pattern title', 'axis' ),
+			'description' => _x( 'The latest closed deals.', 'Pattern description', 'axis' ),
+			'categories'  => array( 'axis-home', 'axis-corporate' ),
+			'keywords'    => array( 'deals', 'transactions', 'track record' ),
+			'inserter'    => true,
+		),
+		'axis/experts'                 => array(
+			'file'        => 'experts.php',
+			'title'       => _x( 'Experts', 'Pattern title', 'axis' ),
+			'description' => _x( 'Expert cards with markets and track record.', 'Pattern description', 'axis' ),
+			'categories'  => array( 'axis-home', 'axis-corporate' ),
+			'keywords'    => array( 'people', 'team', 'brokers' ),
+			'inserter'    => true,
+		),
+		'axis/research'                => array(
+			'file'        => 'research.php',
+			'title'       => _x( 'Research', 'Pattern title', 'axis' ),
+			'description' => _x( 'The latest reports and briefs.', 'Pattern description', 'axis' ),
+			'categories'  => array( 'axis-home', 'axis-market' ),
+			'keywords'    => array( 'reports', 'research', 'outlook' ),
+			'inserter'    => true,
+		),
+		'axis/property-hero'           => array(
+			'file'        => 'property-hero.php',
+			'title'       => _x( 'Property hero', 'Pattern title', 'axis' ),
+			'description' => _x( 'Technical bar, identity, actions and the lead photograph.', 'Pattern description', 'axis' ),
+			'categories'  => array( 'axis-property' ),
+			'keywords'    => array( 'property', 'listing', 'hero' ),
+			'inserter'    => true,
+		),
+		'axis/property-overview'       => array(
+			'file'        => 'property-overview.php',
+			'title'       => _x( 'Property overview', 'Pattern title', 'axis' ),
+			'description' => _x( 'Description beside the heading, then the four key metrics.', 'Pattern description', 'axis' ),
+			'categories'  => array( 'axis-property' ),
+			'keywords'    => array( 'overview', 'metrics' ),
+			'inserter'    => true,
+		),
+		'axis/property-specifications' => array(
+			'file'        => 'property-specifications.php',
+			'title'       => _x( 'Property specifications', 'Pattern title', 'axis' ),
+			'description' => _x( 'Structured property data in labelled rows.', 'Pattern description', 'axis' ),
+			'categories'  => array( 'axis-property' ),
+			'keywords'    => array( 'specifications', 'data' ),
+			'inserter'    => true,
+		),
+		'axis/property-gallery'        => array(
+			'file'        => 'property-gallery.php',
+			'title'       => _x( 'Property gallery', 'Pattern title', 'axis' ),
+			'description' => _x( 'Photos and plans with real previous and next buttons.', 'Pattern description', 'axis' ),
+			'categories'  => array( 'axis-property' ),
+			'keywords'    => array( 'gallery', 'photos', 'plans' ),
+			'inserter'    => true,
+		),
+		'axis/property-location'       => array(
+			'file'        => 'property-location.php',
+			'title'       => _x( 'Location and market', 'Pattern title', 'axis' ),
+			'description' => _x( 'Where the asset sits and what its submarket is doing.', 'Pattern description', 'axis' ),
+			'categories'  => array( 'axis-property' ),
+			'keywords'    => array( 'map', 'location', 'submarket' ),
+			'inserter'    => true,
+		),
+		'axis/property-documents'      => array(
+			'file'        => 'property-documents.php',
+			'title'       => _x( 'Documents and broker', 'Pattern title', 'axis' ),
+			'description' => _x( 'Downloads with type and size beside the listing broker.', 'Pattern description', 'axis' ),
+			'categories'  => array( 'axis-property' ),
+			'keywords'    => array( 'documents', 'offering memorandum', 'broker' ),
+			'inserter'    => true,
+		),
+		'axis/related-assets'          => array(
+			'file'        => 'related-assets.php',
+			'title'       => _x( 'Related assets', 'Pattern title', 'axis' ),
+			'description' => _x( 'Related by rule: same market, same asset type or same transaction type.', 'Pattern description', 'axis' ),
+			'categories'  => array( 'axis-property' ),
+			'keywords'    => array( 'related', 'similar' ),
+			'inserter'    => true,
+		),
+		'axis/related-listings'        => array(
+			'file'        => 'related-listings.php',
+			'title'       => _x( 'Similar listings', 'Pattern title', 'axis' ),
+			'description' => _x( 'Listings like this one: same market and type, priced within 30 percent, best match first, in a carousel.', 'Pattern description', 'axis' ),
+			'categories'  => array( 'axis-property' ),
+			'keywords'    => array( 'related', 'similar', 'nearby', 'query' ),
+			'inserter'    => true,
+		),
+		'axis/market-listings'         => array(
+			'file'        => 'market-listings.php',
+			'title'       => _x( 'Listings in this market', 'Pattern title', 'axis' ),
+			'description' => _x( 'The market\'s listings as cards, newest first, in a carousel.', 'Pattern description', 'axis' ),
+			'categories'  => array( 'axis-market' ),
+			'keywords'    => array( 'listings', 'market', 'carousel' ),
+			'inserter'    => true,
+		),
+		'axis/expert-listings'         => array(
+			'file'        => 'expert-listings.php',
+			'title'       => _x( 'Listings by this expert', 'Pattern title', 'axis' ),
+			'description' => '',
+			'categories'  => array(),
+			'keywords'    => array(),
+			'inserter'    => false,
+		),
+		'axis/transaction-listings'    => array(
+			'file'        => 'transaction-listings.php',
+			'title'       => _x( 'Comparable listings', 'Pattern title', 'axis' ),
+			'description' => '',
+			'categories'  => array(),
+			'keywords'    => array(),
+			'inserter'    => false,
+		),
+		'axis/market-hero'             => array(
+			'file'        => 'market-hero.php',
+			'title'       => _x( 'Market hero', 'Pattern title', 'axis' ),
+			'description' => _x( 'The market\'s featured photograph behind its name and coverage line.', 'Pattern description', 'axis' ),
+			'categories'  => array( 'axis-market' ),
+			'keywords'    => array( 'market', 'hero' ),
+			'inserter'    => true,
+		),
+		'axis/market-snapshot'         => array(
+			'file'        => 'market-snapshot.php',
+			'title'       => _x( 'Market snapshot', 'Pattern title', 'axis' ),
+			'description' => _x( 'Rent, vacancy and change by property type, with charts.', 'Pattern description', 'axis' ),
+			'categories'  => array( 'axis-market' ),
+			'keywords'    => array( 'market', 'data', 'charts' ),
+			'inserter'    => true,
+		),
+		'axis/market-map'              => array(
+			'file'        => 'market-map.php',
+			'title'       => _x( 'Market map', 'Pattern title', 'axis' ),
+			'description' => _x( 'Submarkets on the map with the same submarkets as a list.', 'Pattern description', 'axis' ),
+			'categories'  => array( 'axis-market' ),
+			'keywords'    => array( 'map', 'submarkets' ),
+			'inserter'    => true,
+		),
+		'axis/market-assets'           => array(
+			'file'        => 'market-assets.php',
+			'title'       => _x( 'Market assets', 'Pattern title', 'axis' ),
+			'description' => _x( 'Every available asset in the market as comparable rows.', 'Pattern description', 'axis' ),
+			'categories'  => array( 'axis-market' ),
+			'keywords'    => array( 'properties', 'table', 'available' ),
+			'inserter'    => true,
+		),
+		'axis/transaction-related'     => array(
+			'file'        => 'transaction-related.php',
+			'title'       => _x( 'Similar transactions', 'Pattern title', 'axis' ),
+			'description' => '',
+			'categories'  => array(),
+			'keywords'    => array(),
+			'inserter'    => false,
+		),
+		'axis/expert-transactions'     => array(
+			'file'        => 'expert-transactions.php',
+			'title'       => _x( 'Expert transactions', 'Pattern title', 'axis' ),
+			'description' => '',
+			'categories'  => array(),
+			'keywords'    => array(),
+			'inserter'    => false,
+		),
+		'axis/expert-research'         => array(
+			'file'        => 'expert-research.php',
+			'title'       => _x( 'Expert research', 'Pattern title', 'axis' ),
+			'description' => '',
+			'categories'  => array(),
+			'keywords'    => array(),
+			'inserter'    => false,
+		),
+	);
+}

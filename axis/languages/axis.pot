@@ -1,0 +1,1502 @@
+# Copyright (C) 2026 Louis Okechukwu
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: AXIS 0.2.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/axis\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-15T13:23:04+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: axis\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "AXIS"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://axis.example/theme"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "A commercial real estate block theme built around property intelligence, not property cards. Editorial pages for advisory firms work out of the box; install the AXIS CRE plugin to add properties, markets, transactions, experts and research with a synced map and search."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Louis Okechukwu"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://github.com/Devlouiz"
+msgstr ""
+
+#: inc/block-styles.php:16
+msgid "Card"
+msgstr ""
+
+#: inc/block-styles.php:17
+#: inc/setup.php:48
+msgid "Carousel"
+msgstr ""
+
+#: inc/block-styles.php:18
+msgid "Call to action band"
+msgstr ""
+
+#: inc/block-styles.php:19
+msgid "Axis Grid"
+msgstr ""
+
+#: inc/block-styles.php:20
+msgid "Top rule"
+msgstr ""
+
+#: inc/block-styles.php:23
+msgid "Hero"
+msgstr ""
+
+#: inc/block-styles.php:24
+msgid "Photo tile"
+msgstr ""
+
+#: inc/block-styles.php:27
+msgid "Eyebrow"
+msgstr ""
+
+#: inc/block-styles.php:28
+msgid "Count up"
+msgstr ""
+
+#: inc/block-styles.php:29
+msgid "Technical label"
+msgstr ""
+
+#: inc/block-styles.php:30
+msgid "Figure"
+msgstr ""
+
+#: inc/block-styles.php:31
+msgid "Pill"
+msgstr ""
+
+#: inc/block-styles.php:34
+msgid "Testimonial card"
+msgstr ""
+
+#: inc/block-styles.php:37
+msgid "Ticks"
+msgstr ""
+
+#: inc/block-styles.php:40
+msgid "Data"
+msgstr ""
+
+#: inc/block-styles.php:43
+msgid "Secondary"
+msgstr ""
+
+#: inc/block-styles.php:44
+msgid "Text with arrow"
+msgstr ""
+
+#: inc/block-styles.php:45
+msgid "On photo"
+msgstr ""
+
+#: inc/block-styles.php:46
+msgid "Chip"
+msgstr ""
+
+#: inc/block-styles.php:49
+msgid "Ruled rows"
+msgstr ""
+
+#: inc/cre-patterns.php:19
+msgctxt "Pattern title"
+msgid "Market explorer"
+msgstr ""
+
+#: inc/cre-patterns.php:20
+msgctxt "Pattern description"
+msgid "Filters, synced map and results. Falls back to a list when the map is unavailable."
+msgstr ""
+
+#: inc/cre-patterns.php:27
+msgctxt "Pattern title"
+msgid "Featured assets"
+msgstr ""
+
+#: inc/cre-patterns.php:28
+msgctxt "Pattern description"
+msgid "Featured listings in a carousel, featured ones first."
+msgstr ""
+
+#: inc/cre-patterns.php:35
+msgctxt "Pattern title"
+msgid "Browse by property type"
+msgstr ""
+
+#: inc/cre-patterns.php:36
+msgctxt "Pattern description"
+msgid "Five photo tiles, one per property type, linking to its listings."
+msgstr ""
+
+#: inc/cre-patterns.php:43
+msgctxt "Pattern title"
+msgid "Markets"
+msgstr ""
+
+#: inc/cre-patterns.php:44
+msgctxt "Pattern description"
+msgid "Six market cards with a headline figure each. Edit the figures to match your latest research."
+msgstr ""
+
+#: inc/cre-patterns.php:51
+msgctxt "Pattern title"
+msgid "Market intelligence"
+msgstr ""
+
+#: inc/cre-patterns.php:52
+msgctxt "Pattern description"
+msgid "One market's figures with two charts. Charts open as tables."
+msgstr ""
+
+#: inc/cre-patterns.php:59
+msgctxt "Pattern title"
+msgid "Recent transactions"
+msgstr ""
+
+#: inc/cre-patterns.php:60
+msgctxt "Pattern description"
+msgid "The latest closed deals."
+msgstr ""
+
+#: inc/cre-patterns.php:67
+msgctxt "Pattern title"
+msgid "Experts"
+msgstr ""
+
+#: inc/cre-patterns.php:68
+msgctxt "Pattern description"
+msgid "Expert cards with markets and track record."
+msgstr ""
+
+#: inc/cre-patterns.php:75
+msgctxt "Pattern title"
+msgid "Research"
+msgstr ""
+
+#: inc/cre-patterns.php:76
+msgctxt "Pattern description"
+msgid "The latest reports and briefs."
+msgstr ""
+
+#: inc/cre-patterns.php:83
+msgctxt "Pattern title"
+msgid "Property hero"
+msgstr ""
+
+#: inc/cre-patterns.php:84
+msgctxt "Pattern description"
+msgid "Technical bar, identity, actions and the lead photograph."
+msgstr ""
+
+#: inc/cre-patterns.php:91
+msgctxt "Pattern title"
+msgid "Property overview"
+msgstr ""
+
+#: inc/cre-patterns.php:92
+msgctxt "Pattern description"
+msgid "Description beside the heading, then the four key metrics."
+msgstr ""
+
+#: inc/cre-patterns.php:99
+msgctxt "Pattern title"
+msgid "Property specifications"
+msgstr ""
+
+#: inc/cre-patterns.php:100
+msgctxt "Pattern description"
+msgid "Structured property data in labelled rows."
+msgstr ""
+
+#: inc/cre-patterns.php:107
+msgctxt "Pattern title"
+msgid "Property gallery"
+msgstr ""
+
+#: inc/cre-patterns.php:108
+msgctxt "Pattern description"
+msgid "Photos and plans with real previous and next buttons."
+msgstr ""
+
+#: inc/cre-patterns.php:115
+msgctxt "Pattern title"
+msgid "Location and market"
+msgstr ""
+
+#: inc/cre-patterns.php:116
+msgctxt "Pattern description"
+msgid "Where the asset sits and what its submarket is doing."
+msgstr ""
+
+#: inc/cre-patterns.php:123
+msgctxt "Pattern title"
+msgid "Documents and broker"
+msgstr ""
+
+#: inc/cre-patterns.php:124
+msgctxt "Pattern description"
+msgid "Downloads with type and size beside the listing broker."
+msgstr ""
+
+#: inc/cre-patterns.php:131
+msgctxt "Pattern title"
+msgid "Related assets"
+msgstr ""
+
+#: inc/cre-patterns.php:132
+msgctxt "Pattern description"
+msgid "Related by rule: same market, same asset type or same transaction type."
+msgstr ""
+
+#: inc/cre-patterns.php:139
+msgctxt "Pattern title"
+msgid "Similar listings"
+msgstr ""
+
+#: inc/cre-patterns.php:140
+msgctxt "Pattern description"
+msgid "Listings like this one: same market and type, priced within 30 percent, best match first, in a carousel."
+msgstr ""
+
+#: inc/cre-patterns.php:147
+msgctxt "Pattern title"
+msgid "Listings in this market"
+msgstr ""
+
+#: inc/cre-patterns.php:148
+msgctxt "Pattern description"
+msgid "The market's listings as cards, newest first, in a carousel."
+msgstr ""
+
+#: inc/cre-patterns.php:155
+msgctxt "Pattern title"
+msgid "Listings by this expert"
+msgstr ""
+
+#: inc/cre-patterns.php:163
+msgctxt "Pattern title"
+msgid "Comparable listings"
+msgstr ""
+
+#: inc/cre-patterns.php:171
+msgctxt "Pattern title"
+msgid "Market hero"
+msgstr ""
+
+#: inc/cre-patterns.php:172
+msgctxt "Pattern description"
+msgid "The market's featured photograph behind its name and coverage line."
+msgstr ""
+
+#: inc/cre-patterns.php:179
+msgctxt "Pattern title"
+msgid "Market snapshot"
+msgstr ""
+
+#: inc/cre-patterns.php:180
+msgctxt "Pattern description"
+msgid "Rent, vacancy and change by property type, with charts."
+msgstr ""
+
+#: inc/cre-patterns.php:187
+msgctxt "Pattern title"
+msgid "Market map"
+msgstr ""
+
+#: inc/cre-patterns.php:188
+msgctxt "Pattern description"
+msgid "Submarkets on the map with the same submarkets as a list."
+msgstr ""
+
+#: inc/cre-patterns.php:195
+msgctxt "Pattern title"
+msgid "Market assets"
+msgstr ""
+
+#: inc/cre-patterns.php:196
+msgctxt "Pattern description"
+msgid "Every available asset in the market as comparable rows."
+msgstr ""
+
+#: inc/cre-patterns.php:203
+msgctxt "Pattern title"
+msgid "Similar transactions"
+msgstr ""
+
+#: inc/cre-patterns.php:211
+msgctxt "Pattern title"
+msgid "Expert transactions"
+msgstr ""
+
+#: inc/cre-patterns.php:219
+msgctxt "Pattern title"
+msgid "Expert research"
+msgstr ""
+
+#: inc/patterns-cre/expert-research.php:16
+#: inc/patterns-cre/research.php:20
+#: patterns/footer.php:90
+msgid "Research"
+msgstr ""
+
+#: inc/patterns-cre/expert-transactions.php:16
+#: inc/patterns-cre/recent-transactions.php:20
+#: patterns/footer.php:42
+#: patterns/team.php:61
+#: patterns/team.php:99
+#: patterns/team.php:137
+#: patterns/team.php:175
+msgid "Transactions"
+msgstr ""
+
+#: inc/patterns-cre/experts.php:20
+#: patterns/footer.php:80
+msgid "Experts"
+msgstr ""
+
+#: inc/patterns-cre/experts.php:24
+#: patterns/team.php:24
+msgid "The people behind the numbers"
+msgstr ""
+
+#: inc/patterns-cre/experts.php:28
+#: patterns/team.php:28
+msgid "Every expert lists their markets, property types and track record."
+msgstr ""
+
+#: inc/patterns-cre/experts.php:34
+msgid "Meet all experts"
+msgstr ""
+
+#: inc/patterns-cre/featured-assets.php:20
+msgid "Featured assets"
+msgstr ""
+
+#: inc/patterns-cre/featured-assets.php:24
+msgid "Listings our team is working on now"
+msgstr ""
+
+#: inc/patterns-cre/featured-assets.php:30
+msgid "View all assets"
+msgstr ""
+
+#: inc/patterns-cre/market-assets.php:20
+msgid "Available assets"
+msgstr ""
+
+#: inc/patterns-cre/market-assets.php:26
+msgid "Open in Market explorer"
+msgstr ""
+
+#: inc/patterns-cre/market-explorer.php:20
+msgid "Explore the market"
+msgstr ""
+
+#: inc/patterns-cre/market-explorer.php:24
+msgid "Filter by type, size or price, or move the map. The list and the map always show the same assets."
+msgstr ""
+
+#: inc/patterns-cre/market-intelligence.php:20
+msgid "Market intelligence"
+msgstr ""
+
+#: inc/patterns-cre/market-intelligence.php:24
+msgid "Rent, vacancy and what changed"
+msgstr ""
+
+#: inc/patterns-cre/market-intelligence.php:28
+msgid "Quarterly figures from our research team."
+msgstr ""
+
+#: inc/patterns-cre/market-intelligence.php:34
+msgid "All market reports"
+msgstr ""
+
+#: inc/patterns-cre/market-map.php:18
+msgid "Submarkets"
+msgstr ""
+
+#: inc/patterns-cre/market-snapshot.php:20
+msgid "Market snapshot"
+msgstr ""
+
+#: inc/patterns-cre/market-snapshot.php:24
+msgid "Updated each quarter by the research team."
+msgstr ""
+
+#: inc/patterns-cre/markets-grid.php:20
+#: patterns/footer.php:38
+#: patterns/hidden-404.php:46
+msgid "Markets"
+msgstr ""
+
+#: inc/patterns-cre/markets-grid.php:24
+msgid "Six markets, one research team"
+msgstr ""
+
+#: inc/patterns-cre/markets-grid.php:30
+msgid "Compare markets"
+msgstr ""
+
+#: inc/patterns-cre/markets-grid.php:43
+#: patterns/contact.php:57
+msgid "New York"
+msgstr ""
+
+#: inc/patterns-cre/markets-grid.php:47
+msgid "Office vacancy 14.2%, rent $78.40 / sf"
+msgstr ""
+
+#: inc/patterns-cre/markets-grid.php:59
+#: patterns/contact.php:81
+msgid "Chicago"
+msgstr ""
+
+#: inc/patterns-cre/markets-grid.php:63
+msgid "Office vacancy 21.4%, rent $41.20 / sf"
+msgstr ""
+
+#: inc/patterns-cre/markets-grid.php:75
+msgid "Dallas"
+msgstr ""
+
+#: inc/patterns-cre/markets-grid.php:79
+msgid "Industrial vacancy 7.8%, rent $6.70 / sf"
+msgstr ""
+
+#: inc/patterns-cre/markets-grid.php:91
+msgid "Atlanta"
+msgstr ""
+
+#: inc/patterns-cre/markets-grid.php:95
+msgid "Industrial vacancy 8.4%, rent $6.20 / sf"
+msgstr ""
+
+#: inc/patterns-cre/markets-grid.php:107
+msgid "Toronto"
+msgstr ""
+
+#: inc/patterns-cre/markets-grid.php:111
+msgid "Office vacancy 18.6%, rent $52.30 / sf"
+msgstr ""
+
+#: inc/patterns-cre/markets-grid.php:123
+msgid "Denver"
+msgstr ""
+
+#: inc/patterns-cre/markets-grid.php:127
+msgid "Office vacancy 26.0%, rent $31.60 / sf"
+msgstr ""
+
+#: inc/patterns-cre/property-documents.php:20
+msgid "Documents"
+msgstr ""
+
+#: inc/patterns-cre/property-gallery.php:18
+msgid "Photos and plans"
+msgstr ""
+
+#: inc/patterns-cre/property-hero.php:35
+msgid "Request the offering memorandum"
+msgstr ""
+
+#: inc/patterns-cre/property-hero.php:39
+msgid "Contact the broker"
+msgstr ""
+
+#: inc/patterns-cre/property-location.php:18
+msgid "Location"
+msgstr ""
+
+#: inc/patterns-cre/property-location.php:29
+msgid "Submarket"
+msgstr ""
+
+#: inc/patterns-cre/property-overview.php:20
+msgid "Overview"
+msgstr ""
+
+#: inc/patterns-cre/property-specifications.php:18
+msgid "Specifications"
+msgstr ""
+
+#: inc/patterns-cre/property-types.php:20
+msgid "Browse by type"
+msgstr ""
+
+#: inc/patterns-cre/property-types.php:24
+msgid "What are you looking for?"
+msgstr ""
+
+#: inc/patterns-cre/property-types.php:28
+msgid "Every listing carries the same figures, so you can compare an office with a warehouse on the numbers."
+msgstr ""
+
+#: inc/patterns-cre/property-types.php:36
+msgid "Office"
+msgstr ""
+
+#: inc/patterns-cre/property-types.php:40
+msgid "Towers, suites and campuses"
+msgstr ""
+
+#: inc/patterns-cre/property-types.php:46
+msgid "Industrial"
+msgstr ""
+
+#: inc/patterns-cre/property-types.php:50
+msgid "Logistics and light industrial"
+msgstr ""
+
+#: inc/patterns-cre/property-types.php:56
+msgid "Multifamily"
+msgstr ""
+
+#: inc/patterns-cre/property-types.php:60
+msgid "Apartments and portfolios"
+msgstr ""
+
+#: inc/patterns-cre/property-types.php:66
+#: patterns/hero-search.php:57
+msgid "Retail"
+msgstr ""
+
+#: inc/patterns-cre/property-types.php:70
+msgid "Flagship and neighbourhood"
+msgstr ""
+
+#: inc/patterns-cre/property-types.php:76
+msgid "Mixed use"
+msgstr ""
+
+#: inc/patterns-cre/property-types.php:80
+msgid "Office over retail"
+msgstr ""
+
+#: inc/patterns-cre/recent-transactions.php:24
+msgid "Recently closed"
+msgstr ""
+
+#: inc/patterns-cre/recent-transactions.php:30
+#: inc/patterns-cre/transaction-related.php:28
+msgid "All transactions"
+msgstr ""
+
+#: inc/patterns-cre/related-assets.php:18
+msgid "Related assets"
+msgstr ""
+
+#: inc/patterns-cre/research.php:24
+msgid "Latest from the research team"
+msgstr ""
+
+#: inc/patterns-cre/research.php:30
+msgid "All research"
+msgstr ""
+
+#: inc/patterns-cre/transaction-related.php:18
+msgid "Similar transactions"
+msgstr ""
+
+#: inc/patterns-cre/transaction-related.php:22
+msgid "Same asset type first, then the most recent."
+msgstr ""
+
+#: inc/setup.php:46
+msgid "Previous"
+msgstr ""
+
+#: inc/setup.php:47
+msgid "Next"
+msgstr ""
+
+#: inc/setup.php:59
+msgid "AXIS: Homepage"
+msgstr ""
+
+#: inc/setup.php:60
+msgid "AXIS: Property"
+msgstr ""
+
+#: inc/setup.php:61
+msgid "AXIS: Market"
+msgstr ""
+
+#: inc/setup.php:62
+msgid "AXIS: Corporate"
+msgstr ""
+
+#: inc/setup.php:63
+msgid "AXIS: Full pages"
+msgstr ""
+
+#: patterns/contact.php
+msgctxt "Pattern title"
+msgid "Contact"
+msgstr ""
+
+#: patterns/contact.php
+msgctxt "Pattern description"
+msgid "Ways to reach the team beside the offices. Add any form plugin block in the left column."
+msgstr ""
+
+#: patterns/contact.php:19
+#: patterns/footer.php:99
+#: patterns/hidden-404.php:51
+msgid "Contact"
+msgstr ""
+
+#: patterns/contact.php:23
+msgid "Tell us the asset and the market"
+msgstr ""
+
+#: patterns/contact.php:30
+msgid "Tell us what you need and in which market. An advisor who covers it replies within one working day."
+msgstr ""
+
+#: patterns/contact.php:35
+msgid "Email: enquiries@axispartners.example"
+msgstr ""
+
+#: patterns/contact.php:39
+msgid "Phone: +1 212 555 0100"
+msgstr ""
+
+#: patterns/contact.php:43
+msgid "Hours: Monday to Friday, 8am to 6pm Eastern"
+msgstr ""
+
+#: patterns/contact.php:49
+msgid "Email the team"
+msgstr ""
+
+#: patterns/contact.php:61
+msgid "330 Madison Avenue"
+msgstr ""
+
+#: patterns/contact.php:65
+msgid "9th floor"
+msgstr ""
+
+#: patterns/contact.php:65
+msgid "New York, NY 10017"
+msgstr ""
+
+#: patterns/contact.php:69
+msgid "+1 212 555 0147"
+msgstr ""
+
+#: patterns/contact.php:74
+#: patterns/contact.php:98
+msgid "Get directions"
+msgstr ""
+
+#: patterns/contact.php:85
+msgid "211 West Kinzie Street"
+msgstr ""
+
+#: patterns/contact.php:89
+msgid "Suite 1200"
+msgstr ""
+
+#: patterns/contact.php:89
+msgid "Chicago, IL 60654"
+msgstr ""
+
+#: patterns/contact.php:93
+msgid "+1 312 555 0190"
+msgstr ""
+
+#: patterns/enquiry.php
+msgctxt "Pattern title"
+msgid "Call to action"
+msgstr ""
+
+#: patterns/enquiry.php
+msgctxt "Pattern description"
+msgid "Teal band with two actions beside a photograph."
+msgstr ""
+
+#: patterns/enquiry.php:22
+msgid "Selling or leasing a building?"
+msgstr ""
+
+#: patterns/enquiry.php:26
+msgid "Tell us the asset and the market. An advisor who covers it replies within one working day with a view on price."
+msgstr ""
+
+#: patterns/enquiry.php:31
+msgid "Request a valuation"
+msgstr ""
+
+#: patterns/enquiry.php:36
+msgid "Talk to an expert"
+msgstr ""
+
+#: patterns/enquiry.php:40
+#: patterns/hero-editorial.php:36
+msgid "Talk to an advisor"
+msgstr ""
+
+#: patterns/footer.php
+msgctxt "Pattern title"
+msgid "Footer"
+msgstr ""
+
+#: patterns/footer.php:22
+msgid "Commercial real estate advisory. Replace this line with your firm in one sentence."
+msgstr ""
+
+#: patterns/footer.php:29
+msgid "Discover"
+msgstr ""
+
+#: patterns/footer.php:34
+msgid "Properties"
+msgstr ""
+
+#: patterns/footer.php:50
+msgid "Advise"
+msgstr ""
+
+#: patterns/footer.php:55
+#: patterns/services-split.php:40
+#: patterns/services.php:36
+msgid "Capital markets"
+msgstr ""
+
+#: patterns/footer.php:59
+#: patterns/services-split.php:50
+msgid "Leasing"
+msgstr ""
+
+#: patterns/footer.php:63
+msgid "Valuation"
+msgstr ""
+
+#: patterns/footer.php:70
+msgid "Company"
+msgstr ""
+
+#: patterns/footer.php:75
+msgid "About"
+msgstr ""
+
+#: patterns/footer.php:84
+#: patterns/team.php:20
+#: patterns/transaction-story.php:87
+msgid "Team"
+msgstr ""
+
+#: patterns/footer.php:94
+#: patterns/hidden-insights-head.php:15
+#: patterns/insights.php:20
+msgid "Insights"
+msgstr ""
+
+#: patterns/footer.php:106
+msgid "Market updates"
+msgstr ""
+
+#: patterns/footer.php:110
+msgid "The quarterly figures for your markets, from the research team."
+msgstr ""
+
+#: patterns/footer.php:115
+msgid "Get market updates"
+msgstr ""
+
+#: patterns/footer.php:123
+#: patterns/hero-editorial.php:22
+msgid "Commercial real estate, with context."
+msgstr ""
+
+#: patterns/footer.php:128
+msgid "Privacy"
+msgstr ""
+
+#: patterns/footer.php:132
+msgid "Accessibility statement"
+msgstr ""
+
+#: patterns/footer.php:136
+msgid "Terms"
+msgstr ""
+
+#: patterns/header-property.php
+msgctxt "Pattern title"
+msgid "Header with search"
+msgstr ""
+
+#: patterns/header-property.php
+msgctxt "Pattern description"
+msgid "Adds address, market and asset ID search to the header."
+msgstr ""
+
+#: patterns/header-property.php:23
+#: patterns/hero-search.php:33
+#: patterns/hidden-404.php:27
+#: patterns/hidden-search-head.php:15
+#: patterns/hidden-search-head.php:18
+msgid "Search"
+msgstr ""
+
+#: patterns/header-property.php:23
+msgid "Search listings"
+msgstr ""
+
+#: patterns/header-property.php:31
+#: patterns/header.php:28
+msgid "List a property"
+msgstr ""
+
+#: patterns/header.php
+msgctxt "Pattern title"
+msgid "Header"
+msgstr ""
+
+#: patterns/hero-editorial.php
+msgctxt "Pattern title"
+msgid "Photo hero"
+msgstr ""
+
+#: patterns/hero-editorial.php
+msgctxt "Pattern description"
+msgid "Full-width photo with the positioning line and two actions."
+msgstr ""
+
+#: patterns/hero-editorial.php:18
+#: patterns/hero-search.php:18
+msgid "Commercial real estate advisory"
+msgstr ""
+
+#: patterns/hero-editorial.php:26
+msgid "Axis Partners advises owners, investors and occupiers across six North American markets, from the first search to the closing table."
+msgstr ""
+
+#: patterns/hero-editorial.php:32
+msgid "Explore properties"
+msgstr ""
+
+#: patterns/hero-editorial.php:41
+#: patterns/services-split.php:26
+msgid "How we advise"
+msgstr ""
+
+#: patterns/hero-search.php
+msgctxt "Pattern title"
+msgid "Photo hero with search"
+msgstr ""
+
+#: patterns/hero-search.php
+msgctxt "Pattern description"
+msgid "Full-width photo, headline, listing search, popular searches and four figures that count up."
+msgstr ""
+
+#: patterns/hero-search.php:22
+msgid "Find commercial space that fits the numbers."
+msgstr ""
+
+#: patterns/hero-search.php:26
+msgid "Offices, logistics, apartments and retail across six North American markets, with the vacancy, rent and cap rate behind every listing."
+msgstr ""
+
+#: patterns/hero-search.php:33
+msgid "City, market, street or asset ID"
+msgstr ""
+
+#: patterns/hero-search.php:40
+msgid "Popular:"
+msgstr ""
+
+#: patterns/hero-search.php:45
+msgid "Offices"
+msgstr ""
+
+#: patterns/hero-search.php:49
+msgid "Logistics"
+msgstr ""
+
+#: patterns/hero-search.php:53
+msgid "Apartments"
+msgstr ""
+
+#: patterns/hero-search.php:66
+msgid "$553M"
+msgstr ""
+
+#: patterns/hero-search.php:70
+msgid "Transacted since 2025"
+msgstr ""
+
+#: patterns/hero-search.php:76
+msgid "6"
+msgstr ""
+
+#: patterns/hero-search.php:80
+msgid "Markets covered"
+msgstr ""
+
+#: patterns/hero-search.php:86
+msgid "17"
+msgstr ""
+
+#: patterns/hero-search.php:90
+msgid "Years advising owners"
+msgstr ""
+
+#: patterns/hero-search.php:96
+msgid "24"
+msgstr ""
+
+#: patterns/hero-search.php:100
+msgid "Advisors on the ground"
+msgstr ""
+
+#: patterns/hidden-404.php
+msgctxt "Pattern title"
+msgid "Page not found"
+msgstr ""
+
+#: patterns/hidden-404.php:16
+msgid "Error 404"
+msgstr ""
+
+#: patterns/hidden-404.php:20
+msgid "We can’t find that page."
+msgstr ""
+
+#: patterns/hidden-404.php:24
+msgid "It may have moved when a listing closed or a report was updated. Search for an address, market or asset ID, or start from a market."
+msgstr ""
+
+#: patterns/hidden-404.php:27
+#: patterns/hidden-search-head.php:18
+msgid "Search the site"
+msgstr ""
+
+#: patterns/hidden-404.php:27
+#: patterns/hidden-search-head.php:18
+msgid "Address, market or asset ID"
+msgstr ""
+
+#: patterns/hidden-404.php:31
+msgid "Or start from"
+msgstr ""
+
+#: patterns/hidden-404.php:35
+msgid "The homepage"
+msgstr ""
+
+#: patterns/hidden-404.php:40
+msgid "All properties"
+msgstr ""
+
+#: patterns/hidden-insights-head.php
+msgctxt "Pattern title"
+msgid "Insights heading"
+msgstr ""
+
+#: patterns/hidden-insights-head.php:19
+msgid "Commentary, case studies and perspectives from the team."
+msgstr ""
+
+#: patterns/hidden-no-results.php
+msgctxt "Pattern title"
+msgid "No results"
+msgstr ""
+
+#: patterns/hidden-no-results.php:15
+msgid "Nothing matched that search"
+msgstr ""
+
+#: patterns/hidden-no-results.php:19
+msgid "Try an address, a market name or an asset ID such as 0047. Check the spelling, or search for fewer words."
+msgstr ""
+
+#: patterns/hidden-post-meta.php
+msgctxt "Pattern title"
+msgid "Post byline"
+msgstr ""
+
+#: patterns/hidden-search-head.php
+msgctxt "Pattern title"
+msgid "Search heading"
+msgstr ""
+
+#: patterns/home-corporate.php
+msgctxt "Pattern title"
+msgid "Home, corporate"
+msgstr ""
+
+#: patterns/home-corporate.php
+msgctxt "Pattern description"
+msgid "Sells expertise first. Adds listings, market data, transactions and research when the AXIS CRE plugin is active."
+msgstr ""
+
+#: patterns/home-property.php
+msgctxt "Pattern title"
+msgid "Home, property-led"
+msgstr ""
+
+#: patterns/home-property.php
+msgctxt "Pattern description"
+msgid "Photo hero with search, featured listings, property types, markets, services, experts, testimonials, research and a call to action."
+msgstr ""
+
+#: patterns/insights.php
+msgctxt "Pattern title"
+msgid "Insights"
+msgstr ""
+
+#: patterns/insights.php
+msgctxt "Pattern description"
+msgid "The three latest posts as cards."
+msgstr ""
+
+#: patterns/insights.php:24
+msgid "Latest insights"
+msgstr ""
+
+#: patterns/insights.php:28
+msgid "Market commentary and case studies from the team."
+msgstr ""
+
+#: patterns/insights.php:34
+msgid "All insights"
+msgstr ""
+
+#: patterns/insights.php:56
+msgid "New insights appear here as soon as they are published."
+msgstr ""
+
+#: patterns/services-split.php
+msgctxt "Pattern title"
+msgid "How we advise"
+msgstr ""
+
+#: patterns/services-split.php
+msgctxt "Pattern description"
+msgid "A photograph beside three numbered practice cards."
+msgstr ""
+
+#: patterns/services-split.php:20
+msgid "Office tower at dusk"
+msgstr ""
+
+#: patterns/services-split.php:30
+msgid "From the first valuation to the closing table"
+msgstr ""
+
+#: patterns/services-split.php:34
+msgid "One team carries a mandate from pricing to close, with the market data in front of every client."
+msgstr ""
+
+#: patterns/services-split.php:44
+#: patterns/services.php:40
+msgid "Sales, recapitalisations and debt placement for single assets and portfolios."
+msgstr ""
+
+#: patterns/services-split.php:54
+msgid "Tenant and landlord representation, from requirement to signed lease."
+msgstr ""
+
+#: patterns/services-split.php:60
+#: patterns/services.php:66
+msgid "Valuation and advisory"
+msgstr ""
+
+#: patterns/services-split.php:64
+msgid "Valuations, portfolio reviews and development feasibility."
+msgstr ""
+
+#: patterns/services.php
+msgctxt "Pattern title"
+msgid "Services"
+msgstr ""
+
+#: patterns/services.php
+msgctxt "Pattern description"
+msgid "Six practices as numbered cards."
+msgstr ""
+
+#: patterns/services.php:20
+msgid "Services"
+msgstr ""
+
+#: patterns/services.php:24
+msgid "Six practices, one team per market"
+msgstr ""
+
+#: patterns/services.php:28
+msgid "Each practice lists its people, transactions and research."
+msgstr ""
+
+#: patterns/services.php:46
+msgid "Tenant representation"
+msgstr ""
+
+#: patterns/services.php:50
+msgid "Site selection, lease negotiation and renewals for occupiers."
+msgstr ""
+
+#: patterns/services.php:56
+msgid "Landlord representation"
+msgstr ""
+
+#: patterns/services.php:60
+msgid "Leasing strategy and marketing for owners of office, industrial and retail space."
+msgstr ""
+
+#: patterns/services.php:70
+msgid "Appraisals, portfolio valuations and highest-and-best-use studies."
+msgstr ""
+
+#: patterns/services.php:76
+msgid "Development"
+msgstr ""
+
+#: patterns/services.php:80
+msgid "Feasibility, entitlement and delivery management from site to stabilisation."
+msgstr ""
+
+#: patterns/services.php:86
+msgid "Property management"
+msgstr ""
+
+#: patterns/services.php:90
+msgid "Operations, tenant relations and reporting for owners."
+msgstr ""
+
+#: patterns/team.php
+msgctxt "Pattern title"
+msgid "Team"
+msgstr ""
+
+#: patterns/team.php
+msgctxt "Pattern description"
+msgid "Four people with their role, market and track record. Static; the AXIS CRE plugin replaces it with live expert cards."
+msgstr ""
+
+#: patterns/team.php:34
+msgid "Meet the team"
+msgstr ""
+
+#: patterns/team.php:42
+msgid "Portrait of David Morgan"
+msgstr ""
+
+#: patterns/team.php:47
+msgid "David Morgan"
+msgstr ""
+
+#: patterns/team.php:51
+msgid "Executive director, capital markets. New York"
+msgstr ""
+
+#: patterns/team.php:57
+msgid "142"
+msgstr ""
+
+#: patterns/team.php:67
+msgid "$3.8B"
+msgstr ""
+
+#: patterns/team.php:71
+#: patterns/team.php:109
+#: patterns/team.php:147
+#: patterns/team.php:185
+msgid "Volume"
+msgstr ""
+
+#: patterns/team.php:80
+msgid "Portrait of Amara Okafor"
+msgstr ""
+
+#: patterns/team.php:85
+msgid "Amara Okafor"
+msgstr ""
+
+#: patterns/team.php:89
+msgid "Director, tenant representation. Chicago"
+msgstr ""
+
+#: patterns/team.php:95
+msgid "96"
+msgstr ""
+
+#: patterns/team.php:105
+msgid "$1.1B"
+msgstr ""
+
+#: patterns/team.php:118
+msgid "Portrait of Lucía Fernández"
+msgstr ""
+
+#: patterns/team.php:123
+msgid "Lucía Fernández"
+msgstr ""
+
+#: patterns/team.php:127
+msgid "Managing director, valuation. Dallas"
+msgstr ""
+
+#: patterns/team.php:133
+msgid "130"
+msgstr ""
+
+#: patterns/team.php:143
+msgid "$5.2B"
+msgstr ""
+
+#: patterns/team.php:156
+msgid "Portrait of Ben Hartley"
+msgstr ""
+
+#: patterns/team.php:161
+msgid "Ben Hartley"
+msgstr ""
+
+#: patterns/team.php:165
+msgid "Senior vice president, industrial leasing. Atlanta"
+msgstr ""
+
+#: patterns/team.php:171
+msgid "88"
+msgstr ""
+
+#: patterns/team.php:181
+msgid "$1.4B"
+msgstr ""
+
+#: patterns/testimonials.php
+msgctxt "Pattern title"
+msgid "Testimonials"
+msgstr ""
+
+#: patterns/testimonials.php
+msgctxt "Pattern description"
+msgid "Client quotes in a carousel. Placeholders: replace them with quotes from clients who agreed to be quoted."
+msgstr ""
+
+#: patterns/testimonials.php:20
+msgid "Clients"
+msgstr ""
+
+#: patterns/testimonials.php:24
+msgid "What clients say"
+msgstr ""
+
+#: patterns/testimonials.php:28
+msgid "Placeholder quotes: replace them with testimonials from clients who agreed to be quoted."
+msgstr ""
+
+#: patterns/testimonials.php:36
+msgid "[Client quote about a sale: what the advisor did and what it changed for the client.]"
+msgstr ""
+
+#: patterns/testimonials.php:37
+#: patterns/testimonials.php:43
+#: patterns/testimonials.php:49
+msgid "[Client name], [Role, company]"
+msgstr ""
+
+#: patterns/testimonials.php:42
+msgid "[Client quote about a lease: how the team found the space and negotiated the terms.]"
+msgstr ""
+
+#: patterns/testimonials.php:48
+msgid "[Client quote about a valuation or a portfolio review.]"
+msgstr ""
+
+#: patterns/transaction-story.php
+msgctxt "Pattern title"
+msgid "Transaction story"
+msgstr ""
+
+#: patterns/transaction-story.php
+msgctxt "Pattern description"
+msgid "A closed deal in four parts: the asset, the transaction, the strategy and the outcome."
+msgstr ""
+
+#: patterns/transaction-story.php:18
+msgid "Transaction 018"
+msgstr ""
+
+#: patterns/transaction-story.php:24
+msgid "Mid-rise apartments on West Kinzie Street"
+msgstr ""
+
+#: patterns/transaction-story.php:30
+msgid "$125M"
+msgstr ""
+
+#: patterns/transaction-story.php:34
+msgid "Sale. Chicago, IL. 2026"
+msgstr ""
+
+#: patterns/transaction-story.php:40
+msgid "Mid-rise apartment building on West Kinzie Street"
+msgstr ""
+
+#: patterns/transaction-story.php:46
+msgid "The asset"
+msgstr ""
+
+#: patterns/transaction-story.php:50
+msgid "A 184-unit mid-rise built in 2004, 81% occupied when the owner engaged us, with units below market after a decade without upgrades."
+msgstr ""
+
+#: patterns/transaction-story.php:56
+msgid "The transaction"
+msgstr ""
+
+#: patterns/transaction-story.php:60
+msgid "A marketed sale to 46 qualified buyers, with eleven first-round bids and three in the final round."
+msgstr ""
+
+#: patterns/transaction-story.php:66
+msgid "The strategy"
+msgstr ""
+
+#: patterns/transaction-story.php:70
+msgid "We priced on the upgraded rent roll, backed by a unit renovation plan and comparable leasing within half a mile."
+msgstr ""
+
+#: patterns/transaction-story.php:76
+msgid "The outcome"
+msgstr ""
+
+#: patterns/transaction-story.php:80
+msgid "Closed at $125M, 6% above the initial guidance, in 94 days from launch."
+msgstr ""
+
+#: patterns/transaction-story.php:91
+msgid "David Morgan, capital markets"
+msgstr ""
+
+#: patterns/transaction-story.php:95
+msgid "Amara Okafor, leasing analysis"
+msgstr ""
+
+#: styles/dark.json
+msgctxt "Style variation name"
+msgid "Dark"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "White"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Mist"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Navy"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Ink"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Body"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Slate"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "On navy"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Teal"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Deep teal"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Teal tint"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "On teal"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Line"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Line strong"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Focus"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Amber"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "On amber"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Lease blue"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Danger"
+msgstr ""
+
+#: theme.json
+msgctxt "Color name"
+msgid "Grid"
+msgstr ""
